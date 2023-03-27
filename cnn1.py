@@ -103,12 +103,3 @@ plt.ylabel('loss', fontsize=14)
 plt.title('loss history', fontsize=14)
 plt.legend(fontsize='large')
 
-f.savefig('loss_history.pdf', bbox_inches='tight')
-
-f = plt.figure(figsize=(10, 6))
-plt.plot(history.history["acc"])
-plt.xlabel('epoch', fontsize=14)
-plt.ylabel('acc', fontsize=14)
-
-f.savefig('accuracy.pdf', bbox_inches='tight')
-
